@@ -1,6 +1,3 @@
-body{
-    overflow: hidden;
-}
 .root{
     width: 100vw;
     height: 100vh;
@@ -10,6 +7,7 @@ body{
 .root > .container{
     width: 96vw;
     height: 100vh;
+    position: absolute fixed;
 }
 .container > .back-color{
     width: 95.7vw;
@@ -140,4 +138,24 @@ body{
     padding-left: 6.5vw;
     margin-top: 1vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container > .services{
+    position: absolute;
+    top: 40vh;
+}
+
+.services > .services-title{
+    font-size: 3vh;
+    font-weight: lighter;
+    color: #ffaa5d;
+    padding-left: 6.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.services > .services-divider{
+    background-color: #ffaa5d;
+    width: 14vw;
+    height: 0.1vh;
 }

@@ -1,0 +1,20 @@
+.baseLine {
+    margin-left: 20vh;
+    position: absolute;
+}
+.baseLine > .line {
+    position: absolute;
+    border-right: 1px solid white;
+    height: 60vh;
+    margin-left: 1vh;
+}
+.baseLine > .yellow-dot {
+    position: absolute;
+    margin-top: 12vh;
+}
+.baseLine > .yellow-dot-two {
+    position: absolute;
+    margin-top: 12vh;
+}
+
+
