@@ -1,21 +1,45 @@
 import React from 'react'
 import Box from "@material-ui/core/Box";
-import { useSpring, animated } from 'react-spring';
 import "../../styles/Resume.css";
-
-import YellowDot from '../YellowDot';
+import { Divider, Typography } from '@material-ui/core';
 
 const Resume = () => {
-    const animm = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 500 }, delay: 500 })
     return (
-        <Box className="services" >
-            <animated.div style={animm} className="services-title">Resume</animated.div>
-            <animated.div style={animm} className="services-divider" />
-            <div className="baseLine">
-                <div className="line" />
-                <YellowDot className="yellow-dot" />
-                <YellowDot className="yellow-dot-two" />
-            </div>
+        <Box className="resume-root" >
+            <Typography className="resume-title">Resume</Typography>
+            <Divider className="resume-divider" />
+            <Box className="resume-container">
+                <div className="resume-dot" />
+                <Box className="resume-text-container">
+                    <Typography className="resume-text-title">Facebook</Typography>
+                    <Typography className="resume-text-date">2012-2014:Graphic Designer</Typography>
+                    <Typography className="resume-text-desc">I am a creative web designer and developer front end. I do live<br />art, illustration, web design, App design, UI & UX design and<br />other digital products </Typography>
+                </Box>
+            </Box>
+            <Box className="resume-container">
+                <div className="resume-dot" />
+                <Box className="resume-text-container">
+                    <Typography className="resume-text-title">Google</Typography>
+                    <Typography className="resume-text-date">2012-2014:Graphic Designer</Typography>
+                    <Typography className="resume-text-desc">I am a creative web designer and developer front end. I do live<br />art, illustration, web design, App design, UI & UX design and<br />other digital products </Typography>
+                </Box>
+            </Box>
+            <Box className="resume-container">
+                <div className="resume-dot" />
+                <Box className="resume-text-container">
+                    <Typography className="resume-text-title">Apple</Typography>
+                    <Typography className="resume-text-date">2012-2014:Graphic Designer</Typography>
+                    <Typography className="resume-text-desc">I am a creative web designer and developer front end. I do live<br />art, illustration, web design, App design, UI & UX design and<br />other digital products </Typography>
+                </Box>
+            </Box>
+            <Box className="resume-container">
+                <div className="resume-dot" />
+                <Box className="resume-text-container">
+                    <Typography className="resume-text-title">Envato</Typography>
+                    <Typography className="resume-text-date">2012-2014:Graphic Designer</Typography>
+                    <Typography className="resume-text-desc">I am a creative web designer and developer front end. I do live<br />art, illustration, web design, App design, UI & UX design and<br />other digital products </Typography>
+                </Box>
+            </Box>
         </Box>
     )
 }

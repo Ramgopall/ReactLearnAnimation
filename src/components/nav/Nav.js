@@ -9,11 +9,12 @@ import { useSpring, animated } from 'react-spring'
 
 import '../../styles/Nav.css'
 
-const Nav = () => {
+const Nav = ({ selected }) => {
     const [navSelected, setNavSelection] = React.useState(0);
 
     const handleClick = (position) => {
         setNavSelection(position)
+        selected(position)
     }
 
     const personAnim = useSpring({ marginLeft: 0, from: { marginLeft: -100 }, config: { duration: 300 }, delay: 1000 })

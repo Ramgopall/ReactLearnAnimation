@@ -1,0 +1,34 @@
+.portfolio-root{
+    position: absolute;
+    top: 12vh;
+}
+.portfolio-root > .portfolio-title{
+    font-size: 3vh;
+    font-weight: lighter;
+    color: #ffaa5d;
+    padding-left: 6.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.portfolio-root > .portfolio-divider{
+    background-color: #ffaa5d;
+    width: 14vw;
+    height: 0.1vh;
+}
+
+.portfolio-root > .portfolio-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vw;
+    margin-top: 2vh;
+}
+.portfolio-container > .portfolio-image{
+    width: 20vh;
+    height: 20vh;
+    margin: 2vh;
+    object-fit: cover;
+    border-radius: 2vh;
+    border-width: 0.5vh;
+    border-color: #ffaa5d;
+    border-style: solid;
+}

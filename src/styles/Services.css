@@ -1,4 +1,22 @@
-.servicesContent {
+.services-root{
+    position: absolute;
+    top: 40vh;
+}
+
+.services-root > .services-title{
+    font-size: 3vh;
+    font-weight: lighter;
+    color: #ffaa5d;
+    padding-left: 6.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.services-root > .services-divider{
+    background-color: #ffaa5d;
+    width: 14vw;
+    height: 0.1vh;
+}
+.services-root > .servicesContent {
     padding-left: 15vh;
     padding-top: 2vh;
 }
