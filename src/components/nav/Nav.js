@@ -22,21 +22,27 @@ const Nav = ({ selected }) => {
     const dvrAnim = useSpring({ marginLeft: 0, from: { marginLeft: -100 }, config: { duration: 300 }, delay: 1300 })
     const appsAnim = useSpring({ marginLeft: 0, from: { marginLeft: -100 }, config: { duration: 300 }, delay: 1400 })
     const phoneAnim = useSpring({ marginLeft: 0, from: { marginLeft: -100 }, config: { duration: 300 }, delay: 1500 })
+
+    const personAnimMobile = useSpring({ marginTop: 0, from: { marginTop: -100 }, config: { duration: 300 }, delay: 1000 })
+    const storageAnimMobile = useSpring({ marginTop: 0, from: { marginTop: -100 }, config: { duration: 300 }, delay: 1200 })
+    const dvrAnimMobile = useSpring({ marginTop: 0, from: { marginTop: -100 }, config: { duration: 300 }, delay: 1300 })
+    const appsAnimMobile = useSpring({ marginTop: 0, from: { marginTop: -100 }, config: { duration: 300 }, delay: 1400 })
+    const phoneAnimMobile = useSpring({ marginTop: 0, from: { marginTop: -100 }, config: { duration: 300 }, delay: 1500 })
     return (
         <Box className="nav-root">
-            <animated.div style={personAnim} className={navSelected === 0 ? "selected" : "unselected"} onClick={() => { handleClick(0) }}>
+            <animated.div style={window.innerWidth < 600 ? personAnimMobile : personAnim} className={navSelected === 0 ? "selected" : "unselected"} onClick={() => { handleClick(0) }}>
                 <PersonIcon className="nav-icon" />
             </animated.div>
-            <animated.div style={storageAnim} className={navSelected === 1 ? "selected" : "unselected"} onClick={() => { handleClick(1) }}>
+            <animated.div style={window.innerWidth < 600 ? storageAnimMobile : storageAnim} className={navSelected === 1 ? "selected" : "unselected"} onClick={() => { handleClick(1) }}>
                 <StorageIcon className="nav-icon" />
             </animated.div>
-            <animated.div style={dvrAnim} className={navSelected === 2 ? "selected" : "unselected"} onClick={() => { handleClick(2) }}>
+            <animated.div style={window.innerWidth < 600 ? dvrAnimMobile : dvrAnim} className={navSelected === 2 ? "selected" : "unselected"} onClick={() => { handleClick(2) }}>
                 <DvrIcon className="nav-icon" />
             </animated.div>
-            <animated.div style={appsAnim} className={navSelected === 3 ? "selected" : "unselected"} onClick={() => { handleClick(3) }}>
+            <animated.div style={window.innerWidth < 600 ? appsAnimMobile : appsAnim} className={navSelected === 3 ? "selected" : "unselected"} onClick={() => { handleClick(3) }}>
                 <AppsIcon className="nav-icon" />
             </animated.div>
-            <animated.div style={phoneAnim} className={navSelected === 4 ? "selected" : "unselected"} onClick={() => { handleClick(4) }}>
+            <animated.div style={window.innerWidth < 600 ? phoneAnimMobile : phoneAnim} className={navSelected === 4 ? "selected" : "unselected"} onClick={() => { handleClick(4) }}>
                 <LocalPhoneIcon className="nav-icon" />
             </animated.div>
         </Box >
